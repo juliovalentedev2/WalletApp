@@ -15,7 +15,6 @@ const authSlice = createSlice({
     initialState,
     reducers: {
       authenticate(state, action: PayloadAction<AuthState>) {
-        console.log('===sliced data', action.payload.pin)
         state.pin = action.payload.pin;
         state.isAuthenticated = action.payload.isAuthenticated;
       },

@@ -1,17 +1,16 @@
 import { StyleSheet } from 'react-native';
+import { theme } from '../../theme';
 
 export const Styles  = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f7f7f7',
       },
       pinDisplay: {
         fontSize: 32,
         letterSpacing: 10,
         marginBottom: 20,
-        color: '#333',
       },
       keyboardContainer: {
         width: '100%',
@@ -27,11 +26,12 @@ export const Styles  = StyleSheet.create({
         height: 80,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#ccc',
+        backgroundColor:  theme.colors.secondary,
         borderRadius: 40,
       },
       keyText: {
         fontSize: 24,
-        color: '#333',
+        fontWeight: '600',
+        color: theme.colors.white,
       },
 })

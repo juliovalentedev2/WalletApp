@@ -2,6 +2,9 @@
   "expo": {
     "name": "WalletApp",
     "slug": "WalletApp",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "plugins": [
+      "expo-localization"
+    ]
   }
 }
