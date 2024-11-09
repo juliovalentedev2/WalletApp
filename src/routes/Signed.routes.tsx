@@ -30,6 +30,10 @@ export const SignedRoutes = () => {
                   handlePress={() => navigation.goBack()}
                 />
               ),
+              title: 'Detlhes da Transação',
+              headerTitleStyle: {
+                color: theme.colors.white
+              },
               headerShown: true, 
               headerStyle: {
                 backgroundColor: theme.colors.primary

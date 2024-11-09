@@ -37,36 +37,36 @@ export const TransactionsList: React.FC<TransactionsListProps> = ({
      
         return `${day}/${month}/${year}`;    
     }
-
+    console.log('==transactionHistory',transactionHistory)
     return (
         <View style={Styles.ListContainer}>
-        <FlatList
-            data={transactionHistory}
-            showsVerticalScrollIndicator={showsVerticalScrollIndicator}
-            renderItem={({item}) => (
-                <TouchableOpacity 
-                    onPress={() => navigation.navigate('TransactionsDetailsScreen')}
-                    style={Styles.container}
-                >
-                    <View style={Styles.CardRow}>
-                        <Text style={Styles.SubTitle}>
-                            {item.description}
-                        </Text>
-                        <Text style={Styles.SubTitle}>
-                            {convertDatToIso(item.date)}
-                        </Text>
-                    </View>
-                    <View style={Styles.CardRow}>
-                        <Text style={Styles.SubTitle}>
-                          Valor: {item.currency} {Number(item.amount).toFixed(2)}
-                        </Text>
-                        <Text style={Styles.SubTitle}>
-                            {item.status}
-                        </Text>
-                    </View>
-                </TouchableOpacity>
-            )}
-        />
+            <FlatList
+                data={transactionHistory}
+                showsVerticalScrollIndicator={showsVerticalScrollIndicator}
+                renderItem={({item}) => (
+                    <TouchableOpacity 
+                        onPress={() => navigation.navigate('TransactionsDetailsScreen', { transactionId: item.id})}
+                        style={Styles.container}
+                    >
+                        <View style={Styles.CardRow}>
+                            <Text style={Styles.SubTitle}>
+                                {item.description}
+                            </Text>
+                            <Text style={Styles.SubTitle}>
+                                {convertDatToIso(item.date)}
+                            </Text>
+                        </View>
+                        <View style={Styles.CardRow}>
+                            <Text style={Styles.SubTitle}>
+                            Valor: {item.currency} {Number(item.amount).toFixed(2)}
+                            </Text>
+                            <Text style={Styles.SubTitle}>
+                                {item.status}
+                            </Text>
+                        </View>
+                    </TouchableOpacity>
+                )}
+            />
         </View>
     )
 }

@@ -37,7 +37,7 @@ export const TransactionsListScreen: React.FC<TransactionsListScreenProps> = () 
 
     checkFirstOpen();
   }, []);
-
+  console.log('===transactions', transactions)
   const handleHideToast = () => {
     setShowToast(false);
   };
