@@ -1,10 +1,12 @@
-# Mobile Application Project
-
-This repository contains the implementation of a mobile application built with React Native and Expo. The project includes core functionality such as state management, navigation, and API interactions, with support for deep linking and locale-specific custom modules for Android and iOS.
 <div style="display: flex; justify-content: space-around;">
   <img src="https://i.ibb.co/dJLmvWf/Simulator-Screenshot-i-Phone-16-Pro-Max-2024-11-10-at-15-04-44.png" width="300" />
   <img src="https://i.ibb.co/QPM59hB/Simulator-Screenshot-i-Phone-16-Pro-Max-2024-11-10-at-15-04-35.png" width="300" />
 </div>
+
+# Wallet App
+
+This repository contains the implementation of a mobile application built with React Native and Expo. The project includes core functionality such as state management, navigation, and API interactions, with support for deep linking and locale-specific custom modules for Android and iOS.
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
