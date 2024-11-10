@@ -12,8 +12,6 @@ This repository contains the implementation of a mobile application built with R
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Running the Application](#running-the-application)
-- [Testing](#testing)
-- [Design Choices](#design-choices)
 - [Trade-offs and Compromises](#trade-offs-and-compromises)
 
 ## Technologies Used
