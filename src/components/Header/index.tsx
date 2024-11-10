@@ -4,8 +4,8 @@ import { Styles } from './styles';
 
 
 export interface HeaderProps {
-    userName: string;
-    balance: string;
+    userName?: string;
+    balance?: string;
     currency?: string
 }
 

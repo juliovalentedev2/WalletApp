@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { AuthRoutes } from './Auth.routes';
 import { SignedRoutes } from './Signed.routes';
-import { RootState } from '../redux/store';
+import { RootState } from 'src/redux/store';
 import { useSelector } from 'react-redux';
 
 export const Routes = () => {

@@ -5,6 +5,12 @@
     "version": "1.0.0",
     "plugins": [
       "expo-localization"
-    ]
+    ],
+    "android": {
+      "package": "com.anonymous.WalletApp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.WalletApp"
+    }
   }
 }

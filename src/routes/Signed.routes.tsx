@@ -1,12 +1,10 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
-import { theme } from '../theme';
-import AntDesign from '@expo/vector-icons/AntDesign';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import { TransactionsListScreen } from '../screens/TransactionsListScreen';
 import { TransactionsDetailsScreen } from '../screens/TransactionsDetailsScreen';
 import { CustomNavigationHeader } from '../components/CustomNavigationHeader';
+import { theme } from 'src/theme';
 
 
 const Stack = createStackNavigator();
@@ -30,6 +28,10 @@ export const SignedRoutes = () => {
                   handlePress={() => navigation.goBack()}
                 />
               ),
+              title: 'Detlhes da Transação',
+              headerTitleStyle: {
+                color: theme.colors.white
+              },
               headerShown: true, 
               headerStyle: {
                 backgroundColor: theme.colors.primary

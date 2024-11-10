@@ -7,7 +7,7 @@ interface AnimatedToastProps {
   onHide: () => void;
 }
 
-export const Toas: React.FC<AnimatedToastProps> = ({ message, onHide }) => {
+export const Toast: React.FC<AnimatedToastProps> = ({ message, onHide }) => {
   const opacity = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {

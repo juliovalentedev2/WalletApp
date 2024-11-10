@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Styles } from './styles';
 import { Text, View } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { PinKeyboard } from '../../components/PinKeyboard';
-import { RootState } from '../../redux/store';
-import { authenticate } from '../../redux/store/slices/authSlice';
+import { authenticate } from 'src/redux/store/slices/authSlice';
+import { PinKeyboard } from 'Components/PinKeyboards';
+import { RootState } from 'src/redux/store';
+
 
 export interface AuthProps {}
 

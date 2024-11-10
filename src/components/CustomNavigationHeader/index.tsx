@@ -2,7 +2,7 @@ import React from 'react';
 import { Styles } from './styles'; 
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { theme } from '../../theme';
+import { theme } from 'src/theme';
 
 export interface CustomNavigationProps {
     handlePress: () => void

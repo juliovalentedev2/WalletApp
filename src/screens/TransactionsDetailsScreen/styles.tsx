@@ -1,16 +1,51 @@
 import { StyleSheet } from 'react-native';
-import { theme } from '../../theme';
+import { theme } from 'src/theme';
 
-export const Styles = StyleSheet.create({
-    container: {
-        flex: 1,
+export const styles = StyleSheet.create({
+    ContainerImage: {
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: theme.colors.primary
+    },
+    StatusImage: {
+        width: 250,
+        height: 250,
+        marginBottom: 60,
+    },
+    container: {
+      flex: 1,
+      padding: 25,
+      backgroundColor: theme.colors.primary
     },
     title: {
-        fontSize: 20,
-        fontWeight: '600',
-        color: theme.colors.white
-    }
-})
+      fontSize: 20,
+      fontWeight: 'bold',
+      marginBottom: 12,
+      color: theme.colors.white,
+    },
+    section: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      marginBottom: 8,
+    },
+    label: {
+      fontSize: 16,
+      color: theme.colors.white,
+    },
+    value: {
+      fontSize: 16,
+      color: theme.colors.white,
+      fontWeight: 'bold',
+    },
+    creditCardContainer: {
+      marginTop: 16,
+      paddingTop: 8,
+      borderTopWidth: 1,
+      borderTopColor: '#ffffff50',
+    },
+    creditCardTitle: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      color: '#ffffffcc',
+      marginBottom: 8,
+    },
+  });

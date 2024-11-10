@@ -4,7 +4,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 export type RootStackParamList = {
   Auth: undefined; 
   TransactionsListScreen: undefined;
-  TransactionsDetailsScreen: undefined
+  TransactionsDetailsScreen: {transactionId: string}
 };
 
 export type RegisterScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Auth' | 'TransactionsListScreen' | 'TransactionsDetailsScreen'>;
