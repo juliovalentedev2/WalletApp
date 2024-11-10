@@ -1,6 +1,6 @@
 <div style="display: flex; justify-content: space-around;">
-  <img src="https://i.ibb.co/dJLmvWf/Simulator-Screenshot-i-Phone-16-Pro-Max-2024-11-10-at-15-04-44.png" width="300" />
   <img src="https://i.ibb.co/QPM59hB/Simulator-Screenshot-i-Phone-16-Pro-Max-2024-11-10-at-15-04-35.png" width="300" />
+  <img src="https://i.ibb.co/dJLmvWf/Simulator-Screenshot-i-Phone-16-Pro-Max-2024-11-10-at-15-04-44.png" width="300" />
 </div>
 
 # Wallet App
